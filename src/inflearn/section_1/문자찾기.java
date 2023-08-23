@@ -8,18 +8,25 @@ public class 문자찾기 {
         Scanner sc = new Scanner(System.in);
         
         String word = sc.next();
-        char ch = sc.next().charAt(0);
+        String comp = sc.next();
 
-        long startTime = System.currentTimeMillis();
-
-        solution(word, ch);
-        
-        long endTime = System.currentTimeMillis();
-        
-        System.out.println("Solution function execution time: " + (endTime - startTime) + " milliseconds");
+        System.out.println(solution(word, comp));
     }
 
-    public static void solution(String word, char ch){
+    // 발전 정답
+    // replace 사용
+    // 문자열 길이 비교
+    public static int solution(String word, String chr){
+        int answer;
+        word = word.toLowerCase();
+        chr = chr.toLowerCase();
+        answer = word.length() - word.replace(chr, "").length();
+        return answer;
+    }
+    
+    
+    // 강의 정답
+    public static void solution1(String word, char ch){
         word = word.toLowerCase();
         char lowerChar = Character.toLowerCase(ch);
 
