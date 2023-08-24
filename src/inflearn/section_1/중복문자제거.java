@@ -2,7 +2,7 @@ package inflearn.section_1;
 
 import java.util.Scanner;
 
-public class Main {
+public class 중복문자제거 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Long start = System.currentTimeMillis();
