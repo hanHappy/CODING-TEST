@@ -1,9 +1,8 @@
 package inflearn.section_2;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class 임시반장정하기 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -20,6 +19,7 @@ public class Main {
 
     public static int solution(int n, int[][] input) {
         int answer = 0;
+
         int studentsNum = input[0].length;
         int[] scores = new int[studentsNum];
 
@@ -41,13 +41,19 @@ public class Main {
             }
         }
 
-        int max = Arrays.stream(scores).max().getAsInt();
-
+        int max = -1;
         for(int i = 0; i < studentsNum; i++){
-            if(scores[i] == max)
-                return i+1;
+            if(scores[i] > answer){
+                max = scores[i];
+            }
+        }
+        for (int i = 0; i < scores.length; i++) {
+            if(scores[i]==max){
+                answer = scores[i];
+                break;
+            }
         }
 
-        return answer;
+        return answer+1;
     }
 }
