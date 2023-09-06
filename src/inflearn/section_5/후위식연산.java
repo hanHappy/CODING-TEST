@@ -6,7 +6,7 @@ import java.util.Stack;
 public class 후위식연산 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println(solution(sc.next()));
+        // System.out.println(solution(sc.next()));
     }
 
 
