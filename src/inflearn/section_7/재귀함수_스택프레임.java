@@ -8,7 +8,7 @@ import java.util.Scanner;
  * 출력 예제 - 1 2 3
  */
 
-public class 재귀함수 {
+public class 재귀함수_스택프레임 {
     public static void main(String[] args) {
         DFS(3);
     }   

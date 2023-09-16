@@ -2,7 +2,7 @@ package inflearn.section_7;
 
 import java.util.*;
 
-public class 송아지찾기 {
+public class 송아지찾기_BFS {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int s = sc.nextInt();
