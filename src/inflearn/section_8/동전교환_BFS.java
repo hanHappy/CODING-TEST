@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class 동전교환 {
+public class 동전교환_BFS {
     public static int bfs(int[] coins, int m){
         int answer = 1;
         Queue<Integer> list = new LinkedList<>();
